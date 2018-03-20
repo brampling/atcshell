@@ -12,5 +12,6 @@ RUN cd /src && go build -o atcshell
 # final stage
 FROM alpine
 WORKDIR /app
+RUN apk add --no-cache ca-certificates
 COPY --from=build-env /src/atcshell /app/
 ENTRYPOINT ./atcshell
