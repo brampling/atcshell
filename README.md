@@ -16,4 +16,4 @@ docker build -t yourname/atcshell .
 
 You can then run the image:
 
-docker run -e ATCKEY=<your key> -e ATCENV=<prod | preprod> -it yourname/atcshell
+docker run -e ATCKEY=key -e ATCENV=<prod | preprod> -it yourname/atcshell
